@@ -154,6 +154,22 @@
         padding: 0;
     }
 
+    .contact-icon {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .contact-icon > div {
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .contact-icon > div > * {
+        margin: 0 !important;
+        margin-left: 10px !important;
+    }
+
     .footer-container {
         grid-template-columns: repeat(3, 1fr);
     }
