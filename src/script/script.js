@@ -1,3 +1,17 @@
+// fixed header
+const header = document.querySelector(".header-1");
+const header2 = document.querySelector(".header-2");
+
+document.querySelector("body").onscroll = () => {
+    if (window.scrollY != 0) {
+        header2.style.marginTop = `${header.scrollHeight}px`;
+        header.classList.add("fixed");
+    } else {
+        header2.style.marginTop = 0;
+        header.classList.remove("fixed");
+    }
+}
+
 // teb js
 const tabButton = document.querySelectorAll(".services-tab-bottom > div");
 const tabSection = document.querySelectorAll(".services-tabs > article");
@@ -22,8 +36,8 @@ recordClick.forEach(i => {
 })
 
 // mobile menu 
-const menuBtn = document.querySelector(".nav-mobile");
 const menu = document.querySelector(".header-nav");
+const menuBtn = document.querySelector(".nav-mobile");
 
 menuBtn.addEventListener("click", () => {
     menuBtn.classList.toggle("act");
