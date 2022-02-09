@@ -78,10 +78,7 @@ img{
     align-items: center;
     height:70px;
     background-color: #f8f8f8;
-    position: relative;
-}
-
-.fixed {
+    /* fixed menu */
     position: fixed;
     top: 0;
     width: 100%;
@@ -112,6 +109,7 @@ img{
     padding: 100px;
     position: relative;
     margin-bottom: 100px;
+    margin-top: 70px;
 }
 
 .request-tab{
